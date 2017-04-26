@@ -1,10 +1,10 @@
 {
-  "name": "spectre.css",
-  "version": "0.2.13",
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-sass": "~0.3.0",
-    "grunt-contrib-watch": "~0.4.4",
-    "grunt-autoprefixer": "~0.2.20130806"
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest"
   }
 }
