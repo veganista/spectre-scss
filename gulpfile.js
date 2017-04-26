@@ -11,13 +11,13 @@ gulp.task('watch', function() {
 });
 
 gulp.task('build', function() {
-  gulp.src('./scss/*.scss')
+  return gulp.src('./scss/*.scss')
   .pipe(sourcemaps.init())
-  .pipe(sass({outputStyle: 'compressed'}))
+  .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
   .pipe(autoprefixer())
-  .pipe(sourcemaps.write('.'))
   .pipe(csscomb())
   .pipe(cleancss())
+  .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest('./docs/dist'))
 });
 
