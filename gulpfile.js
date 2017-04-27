@@ -13,8 +13,11 @@ gulp.task('watch', function() {
 gulp.task('build', function() {
   return gulp.src('./scss/*.scss')
   .pipe(sourcemaps.init())
-  .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-  .pipe(autoprefixer())
+  .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
+  .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
   .pipe(csscomb())
   .pipe(cleancss())
   .pipe(sourcemaps.write('.'))
