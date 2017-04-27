@@ -1,11 +1,19 @@
 # Spectre.css
+
+### SCSS Version
+
+This is a fork of the current Spectre.css framework, modified to use SCSS rather than LESS precompilation.  I have kept the original LESS `src/` folder to allow future updates and merges to be simpler, but the SCSS is located in the `scss/` subfolder.
+The `package.json` and `gulpfile.js` have been modified to compile the SCSS version rather than the LESS version.
+
+### Overview
+
 Spectre.css is a lightweight, responsive and modern CSS framework for faster and extensible development.
 
 - Lightweight (~10KB gzipped) starting point for your projects
 - Flexbox-based, responsive and mobile-friendly layout
 - Carefully designed elements and components
 
-Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with LESS compiler.
+Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with LESS compiler. 
 
 Read [the documentation](https://picturepan2.github.io/spectre/) to learn more.
 
