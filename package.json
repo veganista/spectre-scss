@@ -4,6 +4,8 @@
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
     "gulp-csscomb": "latest",
+    "gulp-ignore": "latest",
+    "gulp-rename": "latest",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest"
   }
