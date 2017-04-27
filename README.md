@@ -1,9 +1,9 @@
-# Spectre.css
+# SCSS Spectre.css
 
-### SCSS Version
-
-This is a fork of the current Spectre.css framework, modified to use SCSS rather than LESS precompilation.  I have kept the original LESS `src/` folder to allow future updates and merges to be simpler, but the SCSS is located in the `scss/` subfolder.
+This is a fork of the current Spectre.css framework, modified to use **SCSS** rather than **LESS** precompilation.  I have kept the original LESS `src/` folder to allow future updates and merges to be simpler, but the SCSS is located in the `scss/` sub-folder.
 The `package.json` and `gulpfile.js` have been modified to compile the SCSS version rather than the LESS version.
+
+The `docs/dist` folder is actually using the version of Spectre.css compiled with SCSS via Gulp and is used for testing and to ensure parity between LESS and SCSS versions. 
 
 ### Overview
 
