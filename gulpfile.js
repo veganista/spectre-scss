@@ -22,6 +22,25 @@ gulp.task('build', function() {
         }))
   .pipe(csscomb())
   .pipe(sourcemaps.write('.',{includeContent:false, sourceRoot: '../'}))
+  .pipe(gulp.dest('./dist'))
+  .pipe(ignore.exclude('*.map'))
+  .pipe(cleancss())
+  .pipe(rename({
+      suffix: '.min'
+  }))
+  .pipe(gulp.dest('./dist'))
+});
+
+gulp.task('docs', function() {
+  return gulp.src('./scss/*.scss')
+  .pipe(sourcemaps.init())
+  .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
+  .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+  .pipe(csscomb())
+  .pipe(sourcemaps.write('.',{includeContent:false, sourceRoot: '../'}))
   .pipe(gulp.dest('./docs/dist'))
   .pipe(ignore.exclude('*.map'))
   .pipe(cleancss())
