@@ -1,4 +1,5 @@
 {
+  "name": "spectre.scss",
   "devDependencies": {
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
